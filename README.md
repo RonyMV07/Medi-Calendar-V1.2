@@ -1,5 +1,5 @@
 # Español/Spanish
-# Medi-Calendar Demo 1.0
+# Medi-Calendar V1.2
 
 ¡Bienvenido a Medi-Calendar! Una aplicación de página única (SPA) diseñada para el autocuidado y la gestión de la salud personal.
 
