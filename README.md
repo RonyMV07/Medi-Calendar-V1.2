@@ -140,20 +140,13 @@ PORT=5000
 JWT_SECRET=<pega_aqui_la_clave_generada>
 ```
 
-### Documentación de Seguridad
-
-📚 **Guías disponibles:**
-- [`backend/SECURITY.md`](backend/SECURITY.md) - Guía completa de seguridad
-- [`backend/README.md`](backend/README.md) - Documentación del backend
-- [`SECURITY_IMPROVEMENTS.md`](SECURITY_IMPROVEMENTS.md) - Resumen de mejoras implementadas
-
 🔧 **Scripts útiles:**
 - `npm run generate-secret` - Genera claves JWT seguras
 - `npm run check-env` - Verifica la configuración
 - `npm run setup` - Validación antes de iniciar
 
 # English/Ingles
-# Medi-Calendar Demo 1.0
+# Medi-Calendar V1.2
 
 Welcome to Medi-Calendar! A Single Page Application (SPA) designed for self-care and personal health management.
 
