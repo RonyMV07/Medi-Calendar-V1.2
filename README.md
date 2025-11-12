@@ -103,7 +103,7 @@ Asegúrate de tener instalado lo siguiente:
 
 Una vez completados estos pasos, la aplicación debería estar corriendo en tu entorno local.
 
-##  usage Uso
+##  Uso
 
 Una vez que la aplicación esté en funcionamiento, puedes registrarte como un nuevo usuario y comenzar a registrar tus datos de salud diarios. Navega a través de las diferentes secciones para registrar y visualizar tus métricas.
 
@@ -244,7 +244,7 @@ Ensure you have the following installed:
 
 After completing these steps, the application should be running in your local environment.
 
-##  usage Usage
+##  Usage
 
 Once the application is running, you can register as a new user and start logging your daily health data. Navigate through the different sections to record and visualize your metrics.
 
