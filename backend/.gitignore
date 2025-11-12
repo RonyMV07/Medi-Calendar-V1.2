@@ -1,4 +1,112 @@
+# ========================================
+# DEPENDENCIAS
+# ========================================
 node_modules/
+package-lock.json
+
+# ========================================
+# VARIABLES DE ENTORNO Y CONFIGURACIÓN
+# ========================================
 .env
-npm-debug.log
+.env.local
+.env.*.local
+.env.production
+.env.staging
+.env.development
+*.env
+
+# Archivos de configuración sensibles
+config/secrets.js
+config/production.json
+
+# ========================================
+# LOGS Y DEBUG
+# ========================================
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+lerna-debug.log*
+.npm
+
+# ========================================
+# SISTEMA OPERATIVO
+# ========================================
+# macOS
 .DS_Store
+.AppleDouble
+.LSOverride
+
+# Windows
+Thumbs.db
+Thumbs.db:encryptable
+ehthumbs.db
+ehthumbs_vista.db
+*.stackdump
+[Dd]esktop.ini
+$RECYCLE.BIN/
+
+# Linux
+*~
+
+# ========================================
+# IDEs y EDITORES
+# ========================================
+# VSCode
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+*.code-workspace
+
+# IntelliJ
+.idea/
+*.iml
+*.iws
+*.ipr
+
+# ========================================
+# TEMPORALES Y CACHE
+# ========================================
+*.tmp
+*.temp
+*.cache
+.cache/
+.temp/
+
+# ========================================
+# BACKUP Y DATOS SENSIBLES
+# ========================================
+*.backup
+*.bak
+*.swp
+*.swo
+*~
+
+# Archivos de base de datos local
+*.sqlite
+*.sqlite3
+*.db
+
+# Certificados y claves
+*.pem
+*.key
+*.cert
+*.crt
+*.p12
+
+# ========================================
+# TESTING Y COVERAGE
+# ========================================
+coverage/
+.nyc_output/
+*.lcov
+
+# ========================================
+# BUILD Y DIST
+# ========================================
+build/
+dist/
+*.tgz

@@ -113,6 +113,45 @@ Una vez que la aplicación esté en funcionamiento, puedes registrarte como un n
 * **Configuración de la Base de Datos:** Asegúrate de que tu instancia de MongoDB esté corriendo antes de iniciar el backend. Es posible que necesites configurar la cadena de conexión a la base de datos en los archivos del backend para que coincida con tu configuración local.
 * **Variables de Entorno:** Para un entorno de producción, se recomienda el uso de variables de entorno para manejar datos sensibles como las claves secretas de JWT y la configuración de la base de datos.
 
+## 🔐 Configuración de Seguridad
+
+### Configuración Rápida
+
+1. **Crear archivo de variables de entorno:**
+```bash
+cd backend
+cp .env.example .env
+```
+
+2. **Generar clave secreta JWT:**
+```bash
+npm run generate-secret
+```
+
+3. **Verificar configuración:**
+```bash
+npm run check-env
+```
+
+4. **Editar `.env` con tus valores:**
+```env
+MONGODB_URI=mongodb://localhost:27017/medicalendar
+PORT=5000
+JWT_SECRET=<pega_aqui_la_clave_generada>
+```
+
+### Documentación de Seguridad
+
+📚 **Guías disponibles:**
+- [`backend/SECURITY.md`](backend/SECURITY.md) - Guía completa de seguridad
+- [`backend/README.md`](backend/README.md) - Documentación del backend
+- [`SECURITY_IMPROVEMENTS.md`](SECURITY_IMPROVEMENTS.md) - Resumen de mejoras implementadas
+
+🔧 **Scripts útiles:**
+- `npm run generate-secret` - Genera claves JWT seguras
+- `npm run check-env` - Verifica la configuración
+- `npm run setup` - Validación antes de iniciar
+
 # English/Ingles
 # Medi-Calendar Demo 1.0
 

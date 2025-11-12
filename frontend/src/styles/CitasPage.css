@@ -1,0 +1,204 @@
+/* Estilos para CitasPage.js */
+
+.citas-page {
+  min-height: 100vh;
+  background-color: #fdfaf6; /* Tono crema/beige muy claro */
+}
+
+.citas-nav {
+  background-color: #ffffff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.citas-nav-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 4rem;
+  max-width: 80rem;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.citas-title {
+  font-size: 1.25rem;
+  font-weight: bold;
+  color: #333;
+}
+
+.citas-nav-buttons {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.citas-nav-button {
+  padding: 0.5rem 1rem;
+  border: 1px solid #bfdbfe; /* Borde azul claro */
+  border-radius: 0.375rem;
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: #1e40af; /* Texto azul */
+  background-color: #eff6ff; /* Fondo azul muy pálido */
+  transition: background-color 0.2s;
+  cursor: pointer;
+}
+
+.citas-nav-button:hover {
+  background-color: #dbeafe;
+}
+
+.citas-main {
+  max-width: 80rem;
+  margin: 0 auto;
+  padding: 1.5rem 1rem;
+}
+
+.citas-filters {
+  background-color: #ffffff;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+  border-radius: 0.5rem;
+  padding: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.citas-filters-grid {
+  display: grid;
+  grid-template-columns: repeat(1, minmax(0, 1fr));
+  gap: 1rem;
+}
+
+@media (min-width: 768px) {
+  .citas-filters-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+
+.citas-label {
+  display: block;
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: #4a5568;
+}
+
+.citas-input {
+  margin-top: 0.25rem;
+  display: block;
+  width: 100%;
+  border: 1px solid #d1d5db;
+  border-radius: 0.375rem;
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+  padding: 0.5rem 0.75rem;
+  font-size: 0.875rem;
+}
+
+.citas-input:focus {
+  outline: none;
+  border-color: #60a5fa;
+  box-shadow: 0 0 0 3px rgba(96, 165, 250, 0.3);
+}
+
+.citas-search-container {
+  margin-top: 0.25rem;
+  position: relative;
+  border-radius: 0.375rem;
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+}
+
+.citas-search-icon {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  padding-left: 0.75rem;
+  display: flex;
+  align-items: center;
+  pointer-events: none;
+  color: #9ca3af;
+}
+
+.citas-search-input {
+  display: block;
+  width: 100%;
+  padding-left: 2.5rem;
+  font-size: 0.875rem;
+  border: 1px solid #d1d5db;
+  border-radius: 0.375rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+
+.citas-search-input:focus {
+  outline: none;
+  border-color: #60a5fa;
+  box-shadow: 0 0 0 3px rgba(96, 165, 250, 0.3);
+}
+
+.citas-list-container {
+  background-color: #ffffff;
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+  overflow: hidden;
+  border-radius: 0.375rem;
+}
+
+.citas-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  border-top: 1px solid #e5e7eb;
+}
+
+.citas-list-item {
+  padding: 1rem 1.5rem;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.citas-item-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.citas-item-title {
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: #3b82f6;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.citas-reminder-badge {
+  padding: 0.125rem 0.5rem;
+  display: inline-flex;
+  font-size: 0.75rem;
+  line-height: 1.25;
+  font-weight: 600;
+  border-radius: 9999px;
+  background-color: #d1fae5;
+  color: #065f46;
+}
+
+.citas-item-details {
+  margin-top: 0.5rem;
+}
+
+.citas-item-info {
+  display: flex;
+  align-items: center;
+  font-size: 0.875rem;
+  color: #6b7280;
+}
+
+.citas-item-icon {
+  flex-shrink: 0;
+  margin-right: 0.375rem;
+  height: 1rem;
+  width: 1rem;
+  color: #9ca3af;
+}
+
+.citas-message {
+  padding: 1rem;
+  text-align: center;
+  color: #6b7280;
+}

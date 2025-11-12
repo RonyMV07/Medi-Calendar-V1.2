@@ -102,6 +102,13 @@ const Dashboard = () => {
           >
             📊 Ver Evolución
           </button>
+          <button 
+            className="btn-action btn-notes"
+            onClick={() => navigate('/notes')}
+            style={{ backgroundColor: '#8b5cf6' }}
+          >
+            📖 Libro de Notas
+          </button>
         </div>
 
         {reflexion && reflexion.diasSinRegistro > 0 && (

@@ -5,7 +5,7 @@ const userSchema = new mongoose.Schema({
   _id: { type: mongoose.Schema.Types.ObjectId, auto: true },
   email: { type: String, required: true, unique: true },
   password: { type: String, required: true }, // Hasheada
-  preferencias_ux: { type: Object, default: {} }, // Ej: { tema: 'dark' }
+  preferencias_ux: { type: Object, default: {} }, // Ej: { tema: 'dark' },
   fecha_registro: { type: Date, default: Date.now }
 });
 

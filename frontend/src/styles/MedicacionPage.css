@@ -1,0 +1,131 @@
+/* Estilos para MedicacionPage.js */
+.medicacion-page {
+  min-height: 100vh;
+  background-color: #f0f9ff; 
+}
+
+.medicacion-nav {
+  background-color: #ffffff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.medicacion-nav-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 4rem;
+  max-width: 80rem;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.medicacion-title {
+  font-size: 1.25rem;
+  font-weight: bold;
+  color: #1e3a8a; 
+}
+
+.medicacion-nav-buttons {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.medicacion-nav-button {
+  padding: 0.5rem 1rem;
+  border: 1px solid #bfdbfe;
+  border-radius: 0.375rem;
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: #1e40af;
+  background-color: #eff6ff;
+  transition: background-color 0.2s;
+}
+
+.medicacion-nav-button:hover {
+  background-color: #dbeafe;
+}
+
+.medicacion-main {
+  max-width: 80rem;
+  margin: 0 auto;
+  padding: 1.5rem 1rem;
+}
+
+.medicacion-filters {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  align-items: flex-end;
+  margin-bottom: 1.5rem;
+  background-color: #ffffff;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+}
+
+.medicacion-filter-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.medicacion-label {
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: #4a5568;
+  margin-bottom: 0.25rem;
+}
+
+.medicacion-input {
+  padding: 0.5rem 0.75rem;
+  border: 1px solid #d1d5db;
+  border-radius: 0.375rem;
+}
+
+.medicacion-filter-button {
+  padding: 0.5rem 1.5rem;
+  border: none;
+  border-radius: 0.375rem;
+  font-weight: 500;
+  color: white;
+  background-color: #3b82f6; 
+  cursor: pointer;
+}
+
+.medicacion-filter-button:disabled {
+  background-color: #93c5fd;
+  cursor: not-allowed;
+}
+
+.medicacion-list {
+  display: grid;
+  gap: 0.75rem;
+}
+
+.medicacion-item {
+  border: 1px solid #e0e7ff;
+  border-radius: 0.5rem;
+  padding: 1rem;
+  background-color: #ffffff;
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+}
+
+.medicacion-item-header {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  font-size: 0.875rem;
+  color: #6b7280;
+}
+
+.medicacion-item-detail {
+  margin-top: 0.5rem;
+  font-size: 1rem;
+}
+
+.medicacion-message {
+  padding: 1rem;
+  text-align: center;
+  color: #6b7280;
+  background-color: #fff;
+  border-radius: 0.5rem;
+}

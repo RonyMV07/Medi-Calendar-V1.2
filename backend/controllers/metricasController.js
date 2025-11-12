@@ -168,3 +168,27 @@ exports.verificarDiasSinRegistro = async (req, res) => {
     res.status(500).json({ error: error.message });
   }
 };
+
+// Obtener todas las notas de los registros
+exports.obtenerNotas = async (req, res) => {
+  try {
+    const usuario_id = req.userId;
+
+    const notas = await RegistroDiario.find({
+      usuario_id,
+      'modulos.sueno.notas_sueno': { $exists: true, $ne: '' } // Solo registros con notas de sueño
+    })
+    .select('fecha_registro modulos.sueno.notas_sueno') // Proyección para eficiencia
+    .sort({ fecha_registro: -1 });
+
+    const resultado = notas.map(n => ({
+      fecha: n.fecha_registro,
+      nota: n.modulos.sueno.notas_sueno
+    }));
+
+    res.json(resultado);
+
+  } catch (error) {
+    res.status(500).json({ error: error.message });
+  }
+};

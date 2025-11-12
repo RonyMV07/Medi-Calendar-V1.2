@@ -3,12 +3,12 @@ import { useNavigate } from 'react-router-dom';
 import { useAuth } from '../hooks/useAuth';
 import '../styles/Login.css';
 
-const Login = () => {
+const LoginPage = () => {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
-  const [isRegister, setIsRegister] = useState(false);
   const [error, setError] = useState('');
   const [loading, setLoading] = useState(false);
+  const [isRegister, setIsRegister] = useState(false);
   const { login, register } = useAuth();
   const navigate = useNavigate();
 
@@ -23,13 +23,18 @@ const Login = () => {
       return;
     }
 
-    const result = isRegister ? await register(email, password) : await login(email, password);
+    try {
+        const result = isRegister ? await register(email, password) : await login(email, password);
 
-    if (result.success) {
-      navigate('/dashboard');
-    } else {
-      setError(result.error);
+        if (result && result.token) { // Asumiendo que el éxito devuelve un token
+          navigate('/dashboard');
+        } else {
+          setError(result.error || 'Ocurrió un error desconocido.');
+        }
+    } catch (err) {
+        setError(err.message || 'Error al conectar con el servidor.');
     }
+
     setLoading(false);
   };
 
@@ -38,7 +43,7 @@ const Login = () => {
       <div className="login-card">
         <h1>🏥 MediCalendar</h1>
         <p className="subtitle">Tu compañero de autocuidado</p>
-
+        
         <form onSubmit={handleSubmit}>
           <div className="form-group">
             <label>Email</label>
@@ -80,4 +85,4 @@ const Login = () => {
   );
 };
 
-export default Login;
+export default LoginPage;

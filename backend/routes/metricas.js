@@ -15,4 +15,7 @@ router.get('/bienestar', metricasController.calcularIndiceBienestar);
 // GET /api/metricas/reflexion - Verificar días sin registro
 router.get('/reflexion', metricasController.verificarDiasSinRegistro);
 
+// GET /api/metricas/notas - Obtener todas las notas de sueño
+router.get('/notas', metricasController.obtenerNotas);
+
 module.exports = router;
